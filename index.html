@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>나만의 중고마켓</title>
+    <link rel="stylesheet"
+        href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <style>
+        .card {
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            /* 마우스를 올릴 때 1.05배로 확대됩니다. */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero bg-dark text-center py-5" style="margin-bottom: 50px;">
+        <h1 class="text-white">나만의 르탄마켓</h1>
+        <h2 class="text-white">집에 있는 물건을 팝니다!</h2>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- 냄비 카드 -->
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem">
+                    <img src="https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG90fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                        class="card-img-top" alt="냄비 이미지" />
+                    <div class="card-body">
+                        <h5 class="card-title">냄비</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
+                        <p class="card-text">
+                            한 번 밖에 안 쓴 냄비 팝니다. 부모님이 독립할 때 주신 거에요!
+                        </p>
+                        <a href="https://spartacodingclub.kr/" class="btn btn-primary" target="_blank"
+                            rel="noopener noreferrer">
+                            상세 정보 보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 전기밥솥 카드 -->
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem">
+                    <img src=data:image/jpeg;base64,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class="card-img-top"
+                        alt="전기밥솥 이미지" />
+                    <div class="card-body">
+                        <h5 class="card-title">전기밥솥</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">8만원</h6>
+                        <p class="card-text">
+                            거의 사용하지 않은 전기밥솥 팝니다. 상태 양호합니다.
+                        </p>
+                        <a href="https://spartacodingclub.kr/" class="btn btn-primary" target="_blank"
+                            rel="noopener noreferrer">
+                            상세 정보 보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 주전자 카드 -->
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem">
+                    <img src="https://images.unsplash.com/photo-1622088934558-b729cf3c8cf8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8JUVCJUFDJUJDJTIwJUVDJUEzJUJDJUVDJUEwJTg0JUVDJTlFJTkwfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                        class="card-img-top" alt="주전자 이미지" />
+                    <div class="card-body">
+                        <h5 class="card-title">주전자</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">3만원</h6>
+                        <p class="card-text">
+                            사용감이 있지만 기능에는 문제 없는 주전자 팝니다.
+                        </p>
+                        <a href="https://spartacodingclub.kr/" class="btn btn-primary" target="_blank"
+                            rel="noopener noreferrer">
+                            상세 정보 보기
+                        </a>
+                    </div>
+                </div>
+            </div><div class="col-md-4">
+                <div class="card" style="width: 18rem">
+                    <img src=청소기.jpeg
+                        class="card-img-top" alt="청소기" />
+                    <div class="card-body">
+                        <h5 class="card-title">청소기</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">25만원</h6>
+                        <p class="card-text">
+                            사용감이 있지만 기능에는 문제 없는 주전자 팝니다.
+                        </p>
+                        <a href="https://spartacodingclub.kr/" class="btn btn-primary" target="_blank"
+                            rel="noopener noreferrer">
+                            상세 정보 보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
